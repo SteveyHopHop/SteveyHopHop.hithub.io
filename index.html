@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio and Video Player</title>
+</head>
+<body>
+	<button onclick="playBoth()">Play Audio and Video</button>
+    
+    <audio hidden id="audioPlayer" controls>
+        <source src="https://46vod-adaptive.akamaized.net/exp=1708670099~acl=%2F5f6dd789-131f-4192-8c19-fa8a1d32d2b5%2F%2A~hmac=4a9af6086220805be96299510f1fad06bfab232b015b70dd70f23f05a5908db9/5f6dd789-131f-4192-8c19-fa8a1d32d2b5/parcel/audio/106b8aae.mp4" type="audio/mpeg">
+    </audio>
+
+    <video id="videoPlayer" controls>
+        <source src="https://46vod-adaptive.akamaized.net/exp=1708670099~acl=%2F5f6dd789-131f-4192-8c19-fa8a1d32d2b5%2F%2A~hmac=4a9af6086220805be96299510f1fad06bfab232b015b70dd70f23f05a5908db9/5f6dd789-131f-4192-8c19-fa8a1d32d2b5/parcel/video/db8b8774.mp4" type="video/mp4">
+    </video>
+    <script>
+        function playBoth() {
+            var audio = document.getElementById('audioPlayer');
+            var video = document.getElementById('videoPlayer');
+            audio.play();
+            video.play();
+        }
+    </script>
+</body>
+</html>
